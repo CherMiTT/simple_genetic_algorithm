@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
 <div class="title">Файл Source.h</div>  </div>
@@ -99,21 +100,38 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
 <p>Заголовочный файл с объявлением функций для основного файла программы  
 <a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="_gray_code_8h_source.html">GrayCode.h</a>&quot;</code><br />
 </div>
 <p><a href="_source_8h_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osob.html">Osob</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс особи для задачи. Содержит две переменные типа singleOsob, которые вместе и образуют особь.  <a href="class_osob.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:a5171488338932f60aa0e91441b310bea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#a5171488338932f60aa0e91441b310bea">f</a> (double x, double y)</td></tr>
 <tr class="memdesc:a5171488338932f60aa0e91441b310bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, заданная в задании: \( f(x, y) = x^2 + 100 * (y - 1)^2 - 1 \)  <a href="_source_8h.html#a5171488338932f60aa0e91441b310bea">Подробнее...</a><br /></td></tr>
 <tr class="separator:a5171488338932f60aa0e91441b310bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b3dac18396652219eab1e72105bd105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e">OSOB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#a9b3dac18396652219eab1e72105bd105">doubleToOsob</a> (double A, double B, double eps, double number)</td></tr>
-<tr class="memdesc:a9b3dac18396652219eab1e72105bd105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ставит в соответсвие десятичному числу из диапазона [A, B] двоичное число  <a href="_source_8h.html#a9b3dac18396652219eab1e72105bd105">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9b3dac18396652219eab1e72105bd105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d3aeeec1f5ea5fa20b67b9ca34c6b8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#ac8d3aeeec1f5ea5fa20b67b9ca34c6b8">osobToDouble</a> (double A, double B, double eps, <a class="el" href="_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e">OSOB</a> osob)</td></tr>
-<tr class="memdesc:ac8d3aeeec1f5ea5fa20b67b9ca34c6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона [A, B].  <a href="_source_8h.html#ac8d3aeeec1f5ea5fa20b67b9ca34c6b8">Подробнее...</a><br /></td></tr>
-<tr class="separator:ac8d3aeeec1f5ea5fa20b67b9ca34c6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af212bcca421a87d886089f0920a850b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e">singleOsob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#af212bcca421a87d886089f0920a850b1">doubleToOsob</a> (double A, double B, double eps, double number)</td></tr>
+<tr class="memdesc:af212bcca421a87d886089f0920a850b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ставит в соответсвие десятичному числу из диапазона [A, B] двоичное число  <a href="_source_8h.html#af212bcca421a87d886089f0920a850b1">Подробнее...</a><br /></td></tr>
+<tr class="separator:af212bcca421a87d886089f0920a850b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4525280eecaae6f159dddef90ab9e258"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#a4525280eecaae6f159dddef90ab9e258">osobToDouble</a> (double A, double B, double eps, <a class="el" href="_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e">singleOsob</a> osob)</td></tr>
+<tr class="memdesc:a4525280eecaae6f159dddef90ab9e258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона [A, B].  <a href="_source_8h.html#a4525280eecaae6f159dddef90ab9e258">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4525280eecaae6f159dddef90ab9e258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdd2dc8563c2ab57aa7e60421f80de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#a8bdd2dc8563c2ab57aa7e60421f80de6">printPopulation</a> (std::array&lt; <a class="el" href="class_osob.html">Osob</a>, 20 &gt; p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps)</td></tr>
+<tr class="memdesc:a8bdd2dc8563c2ab57aa7e60421f80de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Распечатывает в консоль популяцию  <a href="_source_8h.html#a8bdd2dc8563c2ab57aa7e60421f80de6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8bdd2dc8563c2ab57aa7e60421f80de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e2409e96d9951536057a8105d5e2b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_source_8h.html#ad0e2409e96d9951536057a8105d5e2b0">createNewGeneration</a> (std::array&lt; <a class="el" href="class_osob.html">Osob</a>, 20 &gt; &amp;p)</td></tr>
+<tr class="memdesc:ad0e2409e96d9951536057a8105d5e2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новое поколение из 10 лучших особей предыдущего, меняя рандомный бит в каждой координате  <a href="_source_8h.html#ad0e2409e96d9951536057a8105d5e2b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad0e2409e96d9951536057a8105d5e2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Заголовочный файл с объявлением функций для основного файла программы </p>
@@ -121,14 +139,40 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
 <dl class="section date"><dt>Дата</dt><dd>28.03.2021 </dd></dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
 </div><h2 class="groupheader">Функции</h2>
-<a id="a9b3dac18396652219eab1e72105bd105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b3dac18396652219eab1e72105bd105">&#9670;&nbsp;</a></span>doubleToOsob()</h2>
+<a id="ad0e2409e96d9951536057a8105d5e2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e2409e96d9951536057a8105d5e2b0">&#9670;&nbsp;</a></span>createNewGeneration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e">OSOB</a> doubleToOsob </td>
+          <td class="memname">void createNewGeneration </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="class_osob.html">Osob</a>, 20 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новое поколение из 10 лучших особей предыдущего, меняя рандомный бит в каждой координате </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>- массив популяции </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af212bcca421a87d886089f0920a850b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af212bcca421a87d886089f0920a850b1">&#9670;&nbsp;</a></span>doubleToOsob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e">singleOsob</a> doubleToOsob </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -210,8 +254,8 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
 
 </div>
 </div>
-<a id="ac8d3aeeec1f5ea5fa20b67b9ca34c6b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d3aeeec1f5ea5fa20b67b9ca34c6b8">&#9670;&nbsp;</a></span>osobToDouble()</h2>
+<a id="a4525280eecaae6f159dddef90ab9e258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4525280eecaae6f159dddef90ab9e258">&#9670;&nbsp;</a></span>osobToDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +281,7 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e">OSOB</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e">singleOsob</a>&#160;</td>
           <td class="paramname"><em>osob</em>&#160;</td>
         </tr>
         <tr>
@@ -258,6 +302,69 @@ $(document).ready(function(){initNavTree('_source_8h.html',''); initResizable();
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Соответсвующее десятичное число </dd></dl>
+
+</div>
+</div>
+<a id="a8bdd2dc8563c2ab57aa7e60421f80de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdd2dc8563c2ab57aa7e60421f80de6">&#9670;&nbsp;</a></span>printPopulation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printPopulation </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="class_osob.html">Osob</a>, 20 &gt;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>C</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Распечатывает в консоль популяцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>- массив популяции </td></tr>
+    <tr><td class="paramname">A,B</td><td>- границы отрезка, на котором могут быть десятичные числа координаты x </td></tr>
+    <tr><td class="paramname">C,D</td><td>- границы отрезка, на котором могут быть десятичные числа координаты y </td></tr>
+    <tr><td class="paramname">eps</td><td>- точность, с которой просматриваем отрезки </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

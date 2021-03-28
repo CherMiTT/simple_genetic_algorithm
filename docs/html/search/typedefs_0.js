@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['osob_21',['OSOB',['../_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e',1,'GrayCode.h']]]
+  ['singleosob_32',['singleOsob',['../_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e',1,'GrayCode.h']]]
 ];

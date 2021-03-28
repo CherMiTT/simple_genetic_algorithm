@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doubletoosob_15',['doubleToOsob',['../_source_8cpp.html#a9b3dac18396652219eab1e72105bd105',1,'doubleToOsob(double A, double B, double eps, double number):&#160;Source.cpp'],['../_source_8h.html#a9b3dac18396652219eab1e72105bd105',1,'doubleToOsob(double A, double B, double eps, double number):&#160;Source.cpp']]]
+  ['createnewgeneration_21',['createNewGeneration',['../_source_8cpp.html#ad0e2409e96d9951536057a8105d5e2b0',1,'createNewGeneration(std::array&lt; Osob, 20 &gt; &amp;p):&#160;Source.cpp'],['../_source_8h.html#ad0e2409e96d9951536057a8105d5e2b0',1,'createNewGeneration(std::array&lt; Osob, 20 &gt; &amp;p):&#160;Source.cpp']]]
 ];

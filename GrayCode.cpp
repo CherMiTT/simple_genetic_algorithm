@@ -9,16 +9,26 @@
 
 #include "GrayCode.h"
 
-OSOB toGrayCode(const OSOB &PosCode)
+/**
+* \brief Преобразует особь из ПДК в код Грея
+* \param PosCode Особь в позиционном коде
+* \return Соответсвующая особь в коде Грея
+*/
+singleOsob toGrayCode(const singleOsob &PosCode)
 {
 	return PosCode ^ (PosCode >> 1);
 }
 
-OSOB toPosCode(const OSOB &GrayCode)
+/**
+* \brief Преобразует особь из ПДК в код Грея
+* \param PosCode Особь в позиционном коде
+* \return Соответсвующая особь в коде Грея
+*/
+singleOsob toPosCode(const singleOsob &GrayCode)
 {
     unsigned long n = 0;
     unsigned long g = GrayCode.to_ulong();
     for (; g; g >>= 1)
         n ^= g;
-    return OSOB(n);
+    return singleOsob(n);
 }

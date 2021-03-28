@@ -1,6 +1,6 @@
 var _gray_code_8h =
 [
-    [ "OSOB", "_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e", null ],
-    [ "toGrayCode", "_gray_code_8h.html#a9487dda2a82e2f91079f392d725aaaa2", null ],
-    [ "toPosCode", "_gray_code_8h.html#afec1f8f5c5b3214198dd6224d9f5dd5b", null ]
+    [ "singleOsob", "_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e", null ],
+    [ "toGrayCode", "_gray_code_8h.html#a53ce1f3420229b11388a30558142f686", null ],
+    [ "toPosCode", "_gray_code_8h.html#aa66084c46cc2ea4f8a6fb310bf67b159", null ]
 ];

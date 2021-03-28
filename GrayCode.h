@@ -10,19 +10,8 @@
 
 #include <bitset>
 
-/// Тип особи размером в 18 генов по 1 байту
-using OSOB = std::bitset<18>;
+/// Тип особи для одной переменной размером в 18 генов по 1 байту
+using singleOsob = std::bitset<18>;
 
-/**
-* \brief Преобразует особь из ПДК в код Грея
-* \param PosCode Особь в позиционном коде
-* \return Соответсвующая особь в коде Грея
-*/
-OSOB toGrayCode(const OSOB& PosCode);
-
-/**
-* \brief Преобразует особь из кода Грея в ПДК
-* \param GrayCode Особь в коде Грея
-* \return Соответсвующая особь в ПДК
-*/
-OSOB toPosCode(const OSOB& GrayCode);
+singleOsob toGrayCode(const singleOsob& PosCode);
+singleOsob toPosCode(const singleOsob& GrayCode);

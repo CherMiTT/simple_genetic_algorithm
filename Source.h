@@ -9,28 +9,29 @@
 #pragma once
 
 #include <iostream>
+#include <array>
+#include <vector>
+#include <ctime>
+#include <algorithm>
+#include <string>
 #include "GrayCode.h"
 
-/// <summary>
-/// Функция, заданная в задании: \f$ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 \f$
-/// </summary>
-/// <param name="x">Параметр x</param>
-/// <param name="y">Параметр y</param>
-/// <returns>Значение функции f(x, y)</returns>
+/** \brief Класс особи для задачи. Содержит две переменные типа singleOsob, которые вместе и образуют особь.
+*/
+class Osob
+{
+public:
+	Osob();
+	Osob(singleOsob x, singleOsob y);
+	~Osob();
+	std::string toString();
+	std::string toString(singleOsob x, singleOsob y);
+
+	singleOsob x, y;
+};
+
 double f(double x, double y);
-
-/** \brief Ставит в соответсвие десятичному числу из диапазона [A, B] двоичное число
-* \param A, B - границы отрезка [A, B]
-* \param eps - точность, с которой рассматривается отрезок
-* \param number - десятичное число, которому в соответсвие ставим ПДК 
-* \return Соответсвующую особь в позиционном двоичном коде
-*/
-OSOB doubleToOsob(double A, double B, double eps, double number);
-
-/** \brief Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона [A, B]
-* \param A, B - границы отрезка [A, B]
-* \param eps - точность, с которой рассматривается отрезок
-* \param osob - особь в ПДК
-* \return Соответсвующее десятичное число
-*/
-double osobToDouble(double A, double B, double eps, OSOB osob);
+singleOsob doubleToOsob(double A, double B, double eps, double number);
+double osobToDouble(double A, double B, double eps, singleOsob osob);
+void printPopulation(std::array<Osob, 20> p, const double& A, const double& B, const double& C, const double& D, const double& eps);
+void createNewGeneration(std::array<Osob, 20> &p);

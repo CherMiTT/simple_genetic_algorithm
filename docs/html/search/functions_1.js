@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['f_16',['f',['../_source_8cpp.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp'],['../_source_8h.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp']]]
+  ['doubletoosob_22',['doubleToOsob',['../_source_8cpp.html#af212bcca421a87d886089f0920a850b1',1,'doubleToOsob(double A, double B, double eps, double number):&#160;Source.cpp'],['../_source_8h.html#af212bcca421a87d886089f0920a850b1',1,'doubleToOsob(double A, double B, double eps, double number):&#160;Source.cpp']]]
 ];
