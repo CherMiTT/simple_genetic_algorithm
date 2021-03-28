@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tograycode_13',['toGrayCode',['../_gray_code_8cpp.html#a9487dda2a82e2f91079f392d725aaaa2',1,'toGrayCode(const OSOB &amp;PosCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#a9487dda2a82e2f91079f392d725aaaa2',1,'toGrayCode(const OSOB &amp;PosCode):&#160;GrayCode.cpp']]],
-  ['toposcode_14',['toPosCode',['../_gray_code_8cpp.html#afec1f8f5c5b3214198dd6224d9f5dd5b',1,'toPosCode(const OSOB &amp;GrayCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#afec1f8f5c5b3214198dd6224d9f5dd5b',1,'toPosCode(const OSOB &amp;GrayCode):&#160;GrayCode.cpp']]]
+  ['f_16',['f',['../_source_8cpp.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp'],['../_source_8h.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp']]]
 ];

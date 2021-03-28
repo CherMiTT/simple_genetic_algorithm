@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tograycode_6',['toGrayCode',['../_gray_code_8cpp.html#a9487dda2a82e2f91079f392d725aaaa2',1,'toGrayCode(const OSOB &amp;PosCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#a9487dda2a82e2f91079f392d725aaaa2',1,'toGrayCode(const OSOB &amp;PosCode):&#160;GrayCode.cpp']]],
-  ['toposcode_7',['toPosCode',['../_gray_code_8cpp.html#afec1f8f5c5b3214198dd6224d9f5dd5b',1,'toPosCode(const OSOB &amp;GrayCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#afec1f8f5c5b3214198dd6224d9f5dd5b',1,'toPosCode(const OSOB &amp;GrayCode):&#160;GrayCode.cpp']]]
+  ['osob_5',['OSOB',['../_gray_code_8h.html#abce2e8a0ff755cc776660444a7ed307e',1,'GrayCode.h']]],
+  ['osobtodouble_6',['osobToDouble',['../_source_8cpp.html#ac8d3aeeec1f5ea5fa20b67b9ca34c6b8',1,'osobToDouble(double A, double B, double eps, OSOB osob):&#160;Source.cpp'],['../_source_8h.html#ac8d3aeeec1f5ea5fa20b67b9ca34c6b8',1,'osobToDouble(double A, double B, double eps, OSOB osob):&#160;Source.cpp']]]
 ];

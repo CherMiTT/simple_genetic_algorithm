@@ -6,11 +6,16 @@
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Gray\+Code.\+h\char`\"{}}\newline
 \doxysubsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{_source_8h_a5171488338932f60aa0e91441b310bea}{f}} (double x, double y)
-\begin{DoxyCompactList}\small\item\em Функция, заданная в задании\+: $ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 $ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Функция, заданная в задании\+: $ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 $ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_gray_code_8h_abce2e8a0ff755cc776660444a7ed307e}{OSOB}} \mbox{\hyperlink{_source_8h_a9b3dac18396652219eab1e72105bd105}{double\+To\+Osob}} (double A, double B, double eps, double number)
+\begin{DoxyCompactList}\small\item\em Ставит в соответсвие десятичному числу из диапазона \mbox{[}A, B\mbox{]} двоичное число \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{_source_8h_ac8d3aeeec1f5ea5fa20b67b9ca34c6b8}{osob\+To\+Double}} (double A, double B, double eps, \mbox{\hyperlink{_gray_code_8h_abce2e8a0ff755cc776660444a7ed307e}{OSOB}} osob)
+\begin{DoxyCompactList}\small\item\em Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона \mbox{[}A, B\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Подробное описание}
@@ -28,6 +33,28 @@ Cher\+Mi
 
 
 \doxysubsection{Функции}
+\mbox{\Hypertarget{_source_8h_a9b3dac18396652219eab1e72105bd105}\label{_source_8h_a9b3dac18396652219eab1e72105bd105}} 
+\index{Source.h@{Source.h}!doubleToOsob@{doubleToOsob}}
+\index{doubleToOsob@{doubleToOsob}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{doubleToOsob()}{doubleToOsob()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_gray_code_8h_abce2e8a0ff755cc776660444a7ed307e}{OSOB}} double\+To\+Osob (\begin{DoxyParamCaption}\item[{double}]{A,  }\item[{double}]{B,  }\item[{double}]{eps,  }\item[{double}]{number }\end{DoxyParamCaption})}
+
+
+
+Ставит в соответсвие десятичному числу из диапазона \mbox{[}A, B\mbox{]} двоичное число 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em A,B} & -\/ границы отрезка \mbox{[}A, B\mbox{]} \\
+\hline
+{\em eps} & -\/ точность, с которой рассматривается отрезок \\
+\hline
+{\em number} & -\/ десятичное число, которому в соответсвие ставим ПДК \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Соответсвующую особь в позиционном двоичном коде 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_source_8h_a5171488338932f60aa0e91441b310bea}\label{_source_8h_a5171488338932f60aa0e91441b310bea}} 
 \index{Source.h@{Source.h}!f@{f}}
 \index{f@{f}!Source.h@{Source.h}}
@@ -46,5 +73,27 @@ Cher\+Mi
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Возвращает}
-Значение функции
+Значение функции f(x, y)
+\end{DoxyReturn}
+\mbox{\Hypertarget{_source_8h_ac8d3aeeec1f5ea5fa20b67b9ca34c6b8}\label{_source_8h_ac8d3aeeec1f5ea5fa20b67b9ca34c6b8}} 
+\index{Source.h@{Source.h}!osobToDouble@{osobToDouble}}
+\index{osobToDouble@{osobToDouble}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{osobToDouble()}{osobToDouble()}}
+{\footnotesize\ttfamily double osob\+To\+Double (\begin{DoxyParamCaption}\item[{double}]{A,  }\item[{double}]{B,  }\item[{double}]{eps,  }\item[{\mbox{\hyperlink{_gray_code_8h_abce2e8a0ff755cc776660444a7ed307e}{OSOB}}}]{osob }\end{DoxyParamCaption})}
+
+
+
+Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона \mbox{[}A, B\mbox{]}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em A,B} & -\/ границы отрезка \mbox{[}A, B\mbox{]} \\
+\hline
+{\em eps} & -\/ точность, с которой рассматривается отрезок \\
+\hline
+{\em osob} & -\/ особь в ПДК \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Соответсвующее десятичное число 
 \end{DoxyReturn}

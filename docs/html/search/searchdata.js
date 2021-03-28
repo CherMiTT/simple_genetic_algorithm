@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "fgost",
+  0: "dfgmost",
   1: "gs",
-  2: "ft",
+  2: "dfmot",
   3: "o"
 };
 
