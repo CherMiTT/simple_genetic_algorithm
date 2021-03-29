@@ -9,16 +9,24 @@
 \doxysubsection*{Определения типов}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}\label{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}} 
-using \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} = std\+::bitset$<$ 18 $>$
-\begin{DoxyCompactList}\small\item\em Тип особи для одной переменной размером в 18 генов по 1 байту \end{DoxyCompactList}\end{DoxyCompactItemize}
+using \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} = std\+::bitset$<$ M $>$
+\begin{DoxyCompactList}\small\item\em Размер популяции \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \mbox{\hyperlink{_gray_code_8h_a53ce1f3420229b11388a30558142f686}{to\+Gray\+Code}} (const \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \&Pos\+Code)
+\mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \mbox{\hyperlink{_gray_code_8h_a53ce1f3420229b11388a30558142f686}{to\+Gray\+Code}} (const \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \&Pos\+Code)
 \begin{DoxyCompactList}\small\item\em Преобразует особь из ПДК в код Грея \end{DoxyCompactList}\item 
-\mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \mbox{\hyperlink{_gray_code_8h_aa66084c46cc2ea4f8a6fb310bf67b159}{to\+Pos\+Code}} (const \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \&Gray\+Code)
+\mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \mbox{\hyperlink{_gray_code_8h_aa66084c46cc2ea4f8a6fb310bf67b159}{to\+Pos\+Code}} (const \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \&Gray\+Code)
 \begin{DoxyCompactList}\small\item\em Преобразует особь из ПДК в код Грея \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gray_code_8h_a525cbd68bb6eb379e1167eac0fc7a813}\label{_gray_code_8h_a525cbd68bb6eb379e1167eac0fc7a813}} 
+const size\+\_\+t {\bfseries M} = 18
+\item 
+\mbox{\Hypertarget{_gray_code_8h_adf99ea743b5dadbe8dc48388c0d7fa94}\label{_gray_code_8h_adf99ea743b5dadbe8dc48388c0d7fa94}} 
+const size\+\_\+t \mbox{\hyperlink{_gray_code_8h_adf99ea743b5dadbe8dc48388c0d7fa94}{N}} = 20
+\begin{DoxyCompactList}\small\item\em Количество генов на одну переменную \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Подробное описание}
@@ -28,19 +36,32 @@ using \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+
 Cher\+Mi 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Дата}
-28.\+03.\+2021 
+28.\+03.\+N21 
 \end{DoxyDate}
 \begin{DoxyVersion}{Версия}
 1.\+0 
 \end{DoxyVersion}
 
 
+\doxysubsection{Типы}
+\mbox{\Hypertarget{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}\label{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}} 
+\index{GrayCode.h@{GrayCode.h}!singleOsob@{singleOsob}}
+\index{singleOsob@{singleOsob}!GrayCode.h@{GrayCode.h}}
+\doxysubsubsection{\texorpdfstring{singleOsob}{singleOsob}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} =  std\+::bitset$<$M$>$}
+
+
+
+Размер популяции 
+
+Тип особи для одной переменной размером в M генов по 1 байту 
+
 \doxysubsection{Функции}
 \mbox{\Hypertarget{_gray_code_8h_a53ce1f3420229b11388a30558142f686}\label{_gray_code_8h_a53ce1f3420229b11388a30558142f686}} 
 \index{GrayCode.h@{GrayCode.h}!toGrayCode@{toGrayCode}}
 \index{toGrayCode@{toGrayCode}!GrayCode.h@{GrayCode.h}}
 \doxysubsubsection{\texorpdfstring{toGrayCode()}{toGrayCode()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} to\+Gray\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \&}]{Pos\+Code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} to\+Gray\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \&}]{Pos\+Code }\end{DoxyParamCaption})}
 
 
 
@@ -58,7 +79,7 @@ Cher\+Mi
 \index{GrayCode.h@{GrayCode.h}!toPosCode@{toPosCode}}
 \index{toPosCode@{toPosCode}!GrayCode.h@{GrayCode.h}}
 \doxysubsubsection{\texorpdfstring{toPosCode()}{toPosCode()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} to\+Pos\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \&}]{Gray\+Code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} to\+Pos\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_gray_code_8h_a0cabcbe6d3e06b0080517d4aefc95463}{single\+Osob}} \&}]{Gray\+Code }\end{DoxyParamCaption})}
 
 
 

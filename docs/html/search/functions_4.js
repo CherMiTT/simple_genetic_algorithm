@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['osob_32',['Osob',['../class_osob.html#affd306bc7fd87b20c861c8efa76f2e2b',1,'Osob']]],
-  ['osobtodouble_33',['osobToDouble',['../_source_8cpp.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp'],['../_source_8h.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp']]]
+  ['main_34',['main',['../_source_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Source.cpp']]],
+  ['mutatepopulation_35',['mutatePopulation',['../_source_8cpp.html#aa29f8d4111c9a8ad8b42ce1bd23e6d97',1,'mutatePopulation(std::array&lt; Osob, N &gt; &amp;p):&#160;Source.cpp'],['../_source_8h.html#aa29f8d4111c9a8ad8b42ce1bd23e6d97',1,'mutatePopulation(std::array&lt; Osob, N &gt; &amp;p):&#160;Source.cpp']]]
 ];

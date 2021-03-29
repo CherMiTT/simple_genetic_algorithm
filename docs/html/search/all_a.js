@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eosob_21',['~Osob',['../class_osob.html#a26e518ce3e3b7ae80b70062b2133e15b',1,'Osob']]]
+  ['printpopulation_14',['printPopulation',['../_source_8cpp.html#a2b9fa7ec3493e31648557e805a047f3f',1,'printPopulation(std::array&lt; Osob, N &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a2b9fa7ec3493e31648557e805a047f3f',1,'printPopulation(std::array&lt; Osob, N &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]],
+  ['printvosobs_15',['printVOsobs',['../_source_8cpp.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]]
 ];

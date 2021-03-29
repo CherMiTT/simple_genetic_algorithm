@@ -2,7 +2,7 @@
 * \file
 * \brief Основной файл программы
 * \author CherMi
-* \date	28.03.2021
+* \date	28.03.N21
 * \version 1.0
 */
 
@@ -11,9 +11,13 @@
 
 using namespace std;
 
-const double a = -10, b = 10; /// Границы для переменной x
-const double c = -10, d = 10; /// Границы для переменной y
-const double eps = 0.0001; /// Заданная точность
+///Границы для переменной x
+const double a = -10, b = 10;
+
+/// Границы для переменной y
+const double c = -10, d = 10;
+///Заданная точность
+const double eps = 0.0001; 
 
 /// <summary>
 /// Функция, заданная в задании: \f$ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 \f$
@@ -104,7 +108,7 @@ bool operator==(const Osob& left, const Osob& right)
 * \param C, D - границы отрезка, на котором могут быть десятичные числа координаты y
 * \param eps - точность, с которой просматриваем отрезки
 */
-void printPopulation(std::array<Osob, 20> &p, const double &A, const double &B, const double &C, const double &D, const double &eps)
+void printPopulation(std::array<Osob, N> &p, const double &A, const double &B, const double &C, const double &D, const double &eps)
 {
 	for (Osob& o : p)
 	{
@@ -134,27 +138,67 @@ void printVOsobs(std::vector<Osob> &v, const double& A, const double& B, const d
 	}
 }
 
-/** \brief Создаёт новое поколение из 10 лучших особей предыдущего, меняя рандомный бит в каждой координате
+/** \brief Мутирует все особи популяци, меняя рандомный бит в каждой координате
 * \param p - массив популяции
 */
-void createNewGeneration(std::array<Osob, 20> &p)
+void mutatePopulation(std::array<Osob, N> &p)
 {
-	for (int i = 0; i < 10; i++)
+	for (auto& o : p)
 	{
-		singleOsob x = p[i].x;
-		singleOsob y = p[i].y;
-		x.flip(rand() % 18);
-		y.flip(rand() % 18);
-		p[i + 10] = Osob(x, y);
+		o.x.flip(rand() % M);
+		o.y.flip(rand() % M);
 	}
 }
 
+/** \brief Кроссинговером создаёт 40 новых особей, N лучших записывает в популяцию в отсортированном порядке
+*
+*/
+void breedNewGeneration(std::array<Osob, N>& p)
+{
+	array<Osob, 40> newOsobs;
+	int first_parent, second_parent;
+	for (int i = 0; i < 40; i++)
+	{
+		first_parent = rand() % N;
+		second_parent = rand() % N;
+
+		singleOsob x, y;
+		int j_x, j_y, pred_x, pred_y;
+		pred_x = rand() % M;
+		for (j_x = 0; j_x < pred_x; j_x++)
+		{
+			x[j_x] = p[first_parent].x[j_x];
+		}
+		for (; j_x < M; j_x++)
+		{
+			x[j_x] = p[second_parent].x[j_x];
+		}
+
+		pred_y = rand() % M;
+		for (j_y = 0; j_y < pred_y; j_y++)
+		{
+			y[j_y] = p[first_parent].x[j_y];
+		}
+		for (; j_y < M; j_y++)
+		{
+			y[j_y] = p[second_parent].x[j_y];
+		}
+
+		newOsobs[i] = Osob(x, y);
+	}
+
+	sort(newOsobs.begin(), newOsobs.end(), compare);
+	for (int i = 0; i < N; i++)
+	{
+		p[i] = newOsobs[i];
+	}
+}
 
 /** \brief Добавляет 5 лучших особей в популяцию вместо 5 худших (если их там ещё нет) и сортирует её
 * \param p - популяция
 * \param v - вектор из 5 лучших особей
 */
-void shuffleBestOsobsIntoPopulation(std::array<Osob, 20> &p, std::vector<Osob> &v)
+void shuffleBestOsobsIntoPopulation(std::array<Osob, N> &p, std::vector<Osob> &v)
 {
 	bool flag;
 	for (int i = 0; i < 5; i++)
@@ -168,11 +212,11 @@ void shuffleBestOsobsIntoPopulation(std::array<Osob, 20> &p, std::vector<Osob> &
 		if (flag)
 		{
 			p.at(i + 14) = tmp;
-			cout << "Added best Osob #" << i << endl;
+			//cout << "Added best Osob #" << i << endl;
 		}
 		else
 		{
-			cout << "Best Osob # " << i << " is already within population" << endl;
+			//cout << "Best Osob # " << i << " is already within population" << endl;
 		}
 	}
 	sort(p.begin(), p.end(), compare);
@@ -183,7 +227,7 @@ void shuffleBestOsobsIntoPopulation(std::array<Osob, 20> &p, std::vector<Osob> &
 * \param p - массив популяции
 * \param v - вектор с лучшими особями
 */
-void saveBestOsobs(std::array<Osob, 20>& p, std::vector<Osob>& v)
+void saveBestOsobs(std::array<Osob, N>& p, std::vector<Osob>& v)
 {
 	v.reserve(10);
 	bool flag;
@@ -198,11 +242,11 @@ void saveBestOsobs(std::array<Osob, 20>& p, std::vector<Osob>& v)
 		if (flag)
 		{
 			v.push_back(p.at(i));
-			cout << "Added Osob #" << i << " to bestOsobs" << endl;
+			//cout << "Added Osob #" << i << " to bestOsobs" << endl;
 		}
 		else
 		{
-			cout << "Osob # " << i << " is already within bestOsobs" << endl;
+			//cout << "Osob # " << i << " is already within bestOsobs" << endl;
 		}
 
 	}
@@ -222,34 +266,25 @@ bool compare(Osob& o1, Osob& o2)
 int main()
 {
 	size_t generation_count = 0; /// Номер текущего поколения
-	array<Osob, 20> population; /// Массив, содержащий популяцию
+	array<Osob, N> population; /// Массив, содержащий популяцию
 	vector<Osob> bestOsobs; /// Массив, пяти лучщих особей
-
-	//const size_t N = 20; /// величина популяции
-	//TODO: N
 
 	srand(time(0));
 
 	//Генерируем начальную популяцию
-	for (Osob& o : population)
-	{
-		singleOsob x(0);
-		singleOsob y(0);
-		x.flip(rand() % 18);
-		y.flip(rand() % 18);
-		o = Osob(x, y);
-	}
-	
+	mutatePopulation(population);
 	sort(population.begin(), population.end(), compare);
 	saveBestOsobs(population, bestOsobs);
 
 	cout << "Generation №" << ++generation_count << endl;
 	printPopulation(population, a, b, c, d, eps);
 
-	for (int i = 0; i < 99; i++)
+	for (int i = 0; i < 49; i++)
 	{
 		shuffleBestOsobsIntoPopulation(population, bestOsobs);
-		createNewGeneration(population);
+		breedNewGeneration(population);
+		saveBestOsobs(population, bestOsobs);
+		mutatePopulation(population);
 		sort(population.begin(), population.end(), compare);
 		saveBestOsobs(population, bestOsobs);
 		cout << "Generation №" << ++generation_count << endl;

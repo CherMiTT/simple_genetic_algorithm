@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['c_0',['c',['../_source_8cpp.html#a8fc6defe4e499b1b9b9c275689e44352',1,'Source.cpp']]],
-  ['compare_1',['compare',['../_source_8cpp.html#a128a4ee2463df6f3514773f8f66467e1',1,'compare(Osob &amp;o1, Osob &amp;o2):&#160;Source.cpp'],['../_source_8h.html#a128a4ee2463df6f3514773f8f66467e1',1,'compare(Osob &amp;o1, Osob &amp;o2):&#160;Source.cpp']]],
-  ['createnewgeneration_2',['createNewGeneration',['../_source_8cpp.html#ad0e2409e96d9951536057a8105d5e2b0',1,'createNewGeneration(std::array&lt; Osob, 20 &gt; &amp;p):&#160;Source.cpp'],['../_source_8h.html#ad0e2409e96d9951536057a8105d5e2b0',1,'createNewGeneration(std::array&lt; Osob, 20 &gt; &amp;p):&#160;Source.cpp']]]
+  ['a_0',['a',['../_source_8cpp.html#ab725778fe3179d0229a8da4c908bdf61',1,'Source.cpp']]]
 ];

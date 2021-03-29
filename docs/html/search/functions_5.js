@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['printpopulation_34',['printPopulation',['../_source_8cpp.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]],
-  ['printvosobs_35',['printVOsobs',['../_source_8cpp.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]]
+  ['osob_36',['Osob',['../class_osob.html#affd306bc7fd87b20c861c8efa76f2e2b',1,'Osob']]],
+  ['osobtodouble_37',['osobToDouble',['../_source_8cpp.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp'],['../_source_8h.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp']]]
 ];

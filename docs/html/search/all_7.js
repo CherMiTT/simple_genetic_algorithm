@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['printpopulation_11',['printPopulation',['../_source_8cpp.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]],
-  ['printvosobs_12',['printVOsobs',['../_source_8cpp.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]]
+  ['main_9',['main',['../_source_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Source.cpp']]],
+  ['mutatepopulation_10',['mutatePopulation',['../_source_8cpp.html#aa29f8d4111c9a8ad8b42ce1bd23e6d97',1,'mutatePopulation(std::array&lt; Osob, N &gt; &amp;p):&#160;Source.cpp'],['../_source_8h.html#aa29f8d4111c9a8ad8b42ce1bd23e6d97',1,'mutatePopulation(std::array&lt; Osob, N &gt; &amp;p):&#160;Source.cpp']]]
 ];
