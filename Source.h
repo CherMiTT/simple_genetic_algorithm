@@ -26,6 +26,7 @@ public:
 	~Osob();
 	std::string toString();
 	std::string toString(singleOsob x, singleOsob y);
+	friend bool operator==(const Osob& left, const Osob& right);
 
 	singleOsob x, y;
 };
@@ -33,5 +34,9 @@ public:
 double f(double x, double y);
 singleOsob doubleToOsob(double A, double B, double eps, double number);
 double osobToDouble(double A, double B, double eps, singleOsob osob);
-void printPopulation(std::array<Osob, 20> p, const double& A, const double& B, const double& C, const double& D, const double& eps);
+void printPopulation(std::array<Osob, 20> &p, const double& A, const double& B, const double& C, const double& D, const double& eps);
+void printVOsobs(std::vector<Osob> &v, const double& A, const double& B, const double& C, const double& D, const double& eps);
 void createNewGeneration(std::array<Osob, 20> &p);
+void shuffleBestOsobsIntoPopulation(std::array<Osob, 20>& p, std::vector<Osob>& v);
+void saveBestOsobs(std::array<Osob, 20>& p, std::vector<Osob>& v);
+bool compare(Osob& o1, Osob& o2);

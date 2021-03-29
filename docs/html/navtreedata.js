@@ -24,29 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "simple_genetic_algorithm", "index.html", [
-    [ "Классы", "annotated.html", [
-      [ "Классы", "annotated.html", "annotated_dup" ],
-      [ "Алфавитный указатель классов", "classes.html", null ],
-      [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", null ],
-        [ "Функции", "functions_func.html", null ]
-      ] ]
-    ] ],
-    [ "Файлы", "files.html", [
-      [ "Файлы", "files.html", "files_dup" ],
-      [ "Список членов всех файлов", "globals.html", [
-        [ "Указатель", "globals.html", null ],
-        [ "Функции", "globals_func.html", null ],
-        [ "Определения типов", "globals_type.html", null ]
-      ] ]
-    ] ]
-  ] ]
+  [ "simple_genetic_algorithm", "index.html", ]
 ];
 
 var NAVTREEINDEX =
 [
-"_gray_code_8cpp.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
