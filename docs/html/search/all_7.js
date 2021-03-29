@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['singleosob_9',['singleOsob',['../_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e',1,'GrayCode.h']]],
-  ['source_2ecpp_10',['Source.cpp',['../_source_8cpp.html',1,'']]],
-  ['source_2eh_11',['Source.h',['../_source_8h.html',1,'']]]
+  ['printpopulation_11',['printPopulation',['../_source_8cpp.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a6b6adbf7f748c308cf26e62b8f426a53',1,'printPopulation(std::array&lt; Osob, 20 &gt; &amp;p, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]],
+  ['printvosobs_12',['printVOsobs',['../_source_8cpp.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp'],['../_source_8h.html#a4bc3edad6023c94a8e2efc17fbba42e8',1,'printVOsobs(std::vector&lt; Osob &gt; &amp;v, const double &amp;A, const double &amp;B, const double &amp;C, const double &amp;D, const double &amp;eps):&#160;Source.cpp']]]
 ];

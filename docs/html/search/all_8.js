@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['tograycode_12',['toGrayCode',['../_gray_code_8cpp.html#a53ce1f3420229b11388a30558142f686',1,'toGrayCode(const singleOsob &amp;PosCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#a53ce1f3420229b11388a30558142f686',1,'toGrayCode(const singleOsob &amp;PosCode):&#160;GrayCode.cpp']]],
-  ['toposcode_13',['toPosCode',['../_gray_code_8cpp.html#aa66084c46cc2ea4f8a6fb310bf67b159',1,'toPosCode(const singleOsob &amp;GrayCode):&#160;GrayCode.cpp'],['../_gray_code_8h.html#aa66084c46cc2ea4f8a6fb310bf67b159',1,'toPosCode(const singleOsob &amp;GrayCode):&#160;GrayCode.cpp']]],
-  ['tostring_14',['toString',['../class_osob.html#ae31c1bd8c3276d0991b3036e1ce46d48',1,'Osob::toString()'],['../class_osob.html#aa0a7a90bf3f035e397437a2f7ce53dd5',1,'Osob::toString(singleOsob x, singleOsob y)']]]
+  ['savebestosobs_13',['saveBestOsobs',['../_source_8cpp.html#ac12f01457f50eac0532f9759887e7d08',1,'saveBestOsobs(std::array&lt; Osob, 20 &gt; &amp;p, std::vector&lt; Osob &gt; &amp;v):&#160;Source.cpp'],['../_source_8h.html#ac12f01457f50eac0532f9759887e7d08',1,'saveBestOsobs(std::array&lt; Osob, 20 &gt; &amp;p, std::vector&lt; Osob &gt; &amp;v):&#160;Source.cpp']]],
+  ['shufflebestosobsintopopulation_14',['shuffleBestOsobsIntoPopulation',['../_source_8cpp.html#aad6ec59f8e89f19026d45faf12245305',1,'shuffleBestOsobsIntoPopulation(std::array&lt; Osob, 20 &gt; &amp;p, std::vector&lt; Osob &gt; &amp;v):&#160;Source.cpp'],['../_source_8h.html#aad6ec59f8e89f19026d45faf12245305',1,'shuffleBestOsobsIntoPopulation(std::array&lt; Osob, 20 &gt; &amp;p, std::vector&lt; Osob &gt; &amp;v):&#160;Source.cpp']]],
+  ['singleosob_15',['singleOsob',['../_gray_code_8h.html#a08cacfa1067ca69fdfb582daa54c2e4e',1,'GrayCode.h']]],
+  ['source_2ecpp_16',['Source.cpp',['../_source_8cpp.html',1,'']]],
+  ['source_2eh_17',['Source.h',['../_source_8h.html',1,'']]]
 ];

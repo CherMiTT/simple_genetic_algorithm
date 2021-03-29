@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['graycode_2ecpp_3',['GrayCode.cpp',['../_gray_code_8cpp.html',1,'']]],
-  ['graycode_2eh_4',['GrayCode.h',['../_gray_code_8h.html',1,'']]]
+  ['f_5',['f',['../_source_8cpp.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp'],['../_source_8h.html#a5171488338932f60aa0e91441b310bea',1,'f(double x, double y):&#160;Source.cpp']]]
 ];

@@ -21,15 +21,23 @@ class \mbox{\hyperlink{class_osob}{Osob}}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{_source_8h_a5171488338932f60aa0e91441b310bea}{f}} (double x, double y)
-\begin{DoxyCompactList}\small\item\em Функция, заданная в задании\+: $ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 $ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \mbox{\hyperlink{_source_8h_af212bcca421a87d886089f0920a850b1}{double\+To\+Osob}} (double A, double B, double eps, double number)
+\begin{DoxyCompactList}\small\item\em Заданная точность \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} \mbox{\hyperlink{_source_8h_af212bcca421a87d886089f0920a850b1}{double\+To\+Osob}} (double A, double B, double \mbox{\hyperlink{_source_8cpp_a3d8c24629d725b9ef8c238cf27c9b158}{eps}}, double number)
 \begin{DoxyCompactList}\small\item\em Ставит в соответсвие десятичному числу из диапазона \mbox{[}A, B\mbox{]} двоичное число \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{_source_8h_a4525280eecaae6f159dddef90ab9e258}{osob\+To\+Double}} (double A, double B, double eps, \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} osob)
+double \mbox{\hyperlink{_source_8h_a4525280eecaae6f159dddef90ab9e258}{osob\+To\+Double}} (double A, double B, double \mbox{\hyperlink{_source_8cpp_a3d8c24629d725b9ef8c238cf27c9b158}{eps}}, \mbox{\hyperlink{_gray_code_8h_a08cacfa1067ca69fdfb582daa54c2e4e}{single\+Osob}} osob)
 \begin{DoxyCompactList}\small\item\em Ставит в соответсвие особи в позиционном двоичном коде десятичное число из диапазона \mbox{[}A, B\mbox{]}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_source_8h_a8bdd2dc8563c2ab57aa7e60421f80de6}{print\+Population}} (std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ p, const double \&A, const double \&B, const double \&C, const double \&D, const double \&eps)
+void \mbox{\hyperlink{_source_8h_a6b6adbf7f748c308cf26e62b8f426a53}{print\+Population}} (std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&p, const double \&A, const double \&B, const double \&C, const double \&D, const double \&\mbox{\hyperlink{_source_8cpp_a3d8c24629d725b9ef8c238cf27c9b158}{eps}})
 \begin{DoxyCompactList}\small\item\em Распечатывает в консоль популяцию \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8h_a4bc3edad6023c94a8e2efc17fbba42e8}{print\+VOsobs}} (std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&v, const double \&A, const double \&B, const double \&C, const double \&D, const double \&\mbox{\hyperlink{_source_8cpp_a3d8c24629d725b9ef8c238cf27c9b158}{eps}})
+\begin{DoxyCompactList}\small\item\em Распечатывает в особи из вектора \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_source_8h_ad0e2409e96d9951536057a8105d5e2b0}{create\+New\+Generation}} (std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&p)
-\begin{DoxyCompactList}\small\item\em Создаёт новое поколение из 10 лучших особей предыдущего, меняя рандомный бит в каждой координате \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Создаёт новое поколение из 10 лучших особей предыдущего, меняя рандомный бит в каждой координате \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8h_aad6ec59f8e89f19026d45faf12245305}{shuffle\+Best\+Osobs\+Into\+Population}} (std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&p, std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Добавляет 5 лучших особей в популяцию вместо 5 худших (если их там ещё нет) и сортирует её \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8h_ac12f01457f50eac0532f9759887e7d08}{save\+Best\+Osobs}} (std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&p, std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Сохраняет 5 лучших особей популяции в вектор, сортирует его и оставляет там только пять лучших особей всех поколений \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_source_8h_a128a4ee2463df6f3514773f8f66467e1}{compare}} (\mbox{\hyperlink{class_osob}{Osob}} \&o1, \mbox{\hyperlink{class_osob}{Osob}} \&o2)
+\begin{DoxyCompactList}\small\item\em функция-\/компаратор для std\+::sort. Возвращает true, если у o1 меньшее значение функции \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Подробное описание}
@@ -47,6 +55,21 @@ Cher\+Mi
 
 
 \doxysubsection{Функции}
+\mbox{\Hypertarget{_source_8h_a128a4ee2463df6f3514773f8f66467e1}\label{_source_8h_a128a4ee2463df6f3514773f8f66467e1}} 
+\index{Source.h@{Source.h}!compare@{compare}}
+\index{compare@{compare}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily bool compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_osob}{Osob}} \&}]{o1,  }\item[{\mbox{\hyperlink{class_osob}{Osob}} \&}]{o2 }\end{DoxyParamCaption})}
+
+
+
+функция-\/компаратор для std\+::sort. Возвращает true, если у o1 меньшее значение функции 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em o1,o2} & -\/ сравниваемые особи \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{_source_8h_ad0e2409e96d9951536057a8105d5e2b0}\label{_source_8h_ad0e2409e96d9951536057a8105d5e2b0}} 
 \index{Source.h@{Source.h}!createNewGeneration@{createNewGeneration}}
 \index{createNewGeneration@{createNewGeneration}!Source.h@{Source.h}}
@@ -92,7 +115,9 @@ Cher\+Mi
 
 
 
-Функция, заданная в задании\+: $ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 $ 
+Заданная точность 
+
+Функция, заданная в задании\+: $ f(x, y) = x^2 + 100 * (y - 1)^2 - 1 $
 
 
 \begin{DoxyParams}{Аргументы}
@@ -126,11 +151,11 @@ Cher\+Mi
 \begin{DoxyReturn}{Возвращает}
 Соответсвующее десятичное число 
 \end{DoxyReturn}
-\mbox{\Hypertarget{_source_8h_a8bdd2dc8563c2ab57aa7e60421f80de6}\label{_source_8h_a8bdd2dc8563c2ab57aa7e60421f80de6}} 
+\mbox{\Hypertarget{_source_8h_a6b6adbf7f748c308cf26e62b8f426a53}\label{_source_8h_a6b6adbf7f748c308cf26e62b8f426a53}} 
 \index{Source.h@{Source.h}!printPopulation@{printPopulation}}
 \index{printPopulation@{printPopulation}!Source.h@{Source.h}}
 \doxysubsubsection{\texorpdfstring{printPopulation()}{printPopulation()}}
-{\footnotesize\ttfamily void print\+Population (\begin{DoxyParamCaption}\item[{std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$}]{p,  }\item[{const double \&}]{A,  }\item[{const double \&}]{B,  }\item[{const double \&}]{C,  }\item[{const double \&}]{D,  }\item[{const double \&}]{eps }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void print\+Population (\begin{DoxyParamCaption}\item[{std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&}]{p,  }\item[{const double \&}]{A,  }\item[{const double \&}]{B,  }\item[{const double \&}]{C,  }\item[{const double \&}]{D,  }\item[{const double \&}]{eps }\end{DoxyParamCaption})}
 
 
 
@@ -145,5 +170,60 @@ Cher\+Mi
 {\em C,D} & -\/ границы отрезка, на котором могут быть десятичные числа координаты y \\
 \hline
 {\em eps} & -\/ точность, с которой просматриваем отрезки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_source_8h_a4bc3edad6023c94a8e2efc17fbba42e8}\label{_source_8h_a4bc3edad6023c94a8e2efc17fbba42e8}} 
+\index{Source.h@{Source.h}!printVOsobs@{printVOsobs}}
+\index{printVOsobs@{printVOsobs}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{printVOsobs()}{printVOsobs()}}
+{\footnotesize\ttfamily void print\+VOsobs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&}]{v,  }\item[{const double \&}]{A,  }\item[{const double \&}]{B,  }\item[{const double \&}]{C,  }\item[{const double \&}]{D,  }\item[{const double \&}]{eps }\end{DoxyParamCaption})}
+
+
+
+Распечатывает в особи из вектора 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em v} & -\/ вектор особей \\
+\hline
+{\em A,B} & -\/ границы отрезка, на котором могут быть десятичные числа координаты x \\
+\hline
+{\em C,D} & -\/ границы отрезка, на котором могут быть десятичные числа координаты y \\
+\hline
+{\em eps} & -\/ точность, с которой просматриваем отрезки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_source_8h_ac12f01457f50eac0532f9759887e7d08}\label{_source_8h_ac12f01457f50eac0532f9759887e7d08}} 
+\index{Source.h@{Source.h}!saveBestOsobs@{saveBestOsobs}}
+\index{saveBestOsobs@{saveBestOsobs}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{saveBestOsobs()}{saveBestOsobs()}}
+{\footnotesize\ttfamily void save\+Best\+Osobs (\begin{DoxyParamCaption}\item[{std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&}]{p,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Сохраняет 5 лучших особей популяции в вектор, сортирует его и оставляет там только пять лучших особей всех поколений 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & -\/ массив популяции \\
+\hline
+{\em v} & -\/ вектор с лучшими особями \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_source_8h_aad6ec59f8e89f19026d45faf12245305}\label{_source_8h_aad6ec59f8e89f19026d45faf12245305}} 
+\index{Source.h@{Source.h}!shuffleBestOsobsIntoPopulation@{shuffleBestOsobsIntoPopulation}}
+\index{shuffleBestOsobsIntoPopulation@{shuffleBestOsobsIntoPopulation}!Source.h@{Source.h}}
+\doxysubsubsection{\texorpdfstring{shuffleBestOsobsIntoPopulation()}{shuffleBestOsobsIntoPopulation()}}
+{\footnotesize\ttfamily void shuffle\+Best\+Osobs\+Into\+Population (\begin{DoxyParamCaption}\item[{std\+::array$<$ \mbox{\hyperlink{class_osob}{Osob}}, 20 $>$ \&}]{p,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_osob}{Osob}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Добавляет 5 лучших особей в популяцию вместо 5 худших (если их там ещё нет) и сортирует её 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em p} & -\/ популяция \\
+\hline
+{\em v} & -\/ вектор из 5 лучших особей \\
 \hline
 \end{DoxyParams}

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['osob_6',['Osob',['../class_osob.html',1,'Osob'],['../class_osob.html#affd306bc7fd87b20c861c8efa76f2e2b',1,'Osob::Osob()']]],
-  ['osobtodouble_7',['osobToDouble',['../_source_8cpp.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp'],['../_source_8h.html#a4525280eecaae6f159dddef90ab9e258',1,'osobToDouble(double A, double B, double eps, singleOsob osob):&#160;Source.cpp']]]
+  ['main_8',['main',['../_source_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Source.cpp']]]
 ];
